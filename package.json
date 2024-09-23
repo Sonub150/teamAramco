@@ -1,0 +1,15 @@
+{
+  "name": "teamaramco",
+  "version": "1.0.0",
+  "main": "./sudhanshu.index.html",
+  "scripts": {
+    "type":"npx tailwindcss -i ./input.css -o ./output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.12"
+  }
+}
