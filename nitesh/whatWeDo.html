@@ -4,20 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <div class="full max-w-screen-2xl mx-auto">
+  
+            <div class="header">
+              <div class="top">
+                <ul><a href="">العربية</a></ul>
+                <ul><a href="">|</a></ul>
+                <ul><a href="">English</a></ul>
+              </div>
+              <ul class="spac"><a href="">Global contacts</a></ul>
+            </div>
+              
+            <div class="navbar">
+              <span class="material-symbols-outlined">search</span>
+              <div class="nav">
+                <ul class="flex gap-6">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#" onclick="toggleSidebar()">What we do</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">News & Media</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+      </nav>
     </header>
-    <!-- Background Image Section -->
-    <div class="bg-[url('./images/asset0.svg')]">
-      <h1 class="text-4xl text-center pt-40">Hi</h1>
-    </div>
 
+    <!-- Side bar section -->
+    <section>
+        <div class="absolute top-0 left-0 mt-36 bg-text-head w-2/6 h-[calc(100vh-9rem)] hidden" id="sidebar">
+            <p  onclick="toggleSidebar()" class="cursor-pointer" >cross</p>
+            <ul class="text-white ml-[35%] mt-[15%] flex flex-col gap-4">
+                <li class="cursor-pointer element-blue">What we do</li>
+                <li class="cursor-pointer element-blue">What we do</li>
+                <li class="cursor-pointer element-blue">What we do</li>
+                <li class="cursor-pointer element-blue">What we do</li>
+                <li class="cursor-pointer element-blue">What we do</li>
+                <li class="cursor-pointer element-blue">What we do</li>
+                <li class="cursor-pointer element-blue">What we do</li>
+                <li class="cursor-pointer element-blue">What we do</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <!-- Hero Scrtion -->
+     <section class="max-w-screen-2xl mx-auto border border-red-600 border-4">
+        <div style="background-image: url(./images/asset\ 1.webp) ; height:1000px" class="bg-cover bg-center rounded-xl p-4">
+            <div class="">
+                    
+                    <p>What we do</p>
+            </div>
+            <div class="mt-40">
+                <h1>What we do</h1>
+                <p>Investing for growth. Innovating for greater sustainability.</p>
+                <div>
+                    <span>Our Annual Report</span>
+                    <span>Our Sustainbility Report</span>
+                </div>
+            </div>
+        </div>
+     </section>
     <!-- Free text -->
-    <section class="">
-      <div class="flex max-w-screen-2xl justify-center mx-auto">
+    <section class=" max-w-screen-2xl  mx-auto border border-red-600 border-4">
+      <div class="flex">
         <p>
           For 90 years, Aramco has provided vital energy to power businesses,
           people, and progress around the world. As one of the world’s leading
@@ -47,7 +105,36 @@
         </p>
       </div>
     </section>
-
+    <!-- Image Section -->
+     <section class="max-w-screen-2xl mx-auto mt-52">
+        <div class="flex gap-5">
+            <div>
+                <img alt="Tanajib" loading="lazy" class="rounded-2xl" sizes="313px" srcset="https://www.aramco.com/-/jssmedia/images/creating-value/sustainable-business-operations/carbon-capture-utilization-and-storage/ccus-tanajib.jpg?cx=0.5&amp;cy=0.5&amp;cw=300&amp;ch=169 300w, https://www.aramco.com/-/jssmedia/images/creating-value/sustainable-business-operations/carbon-capture-utilization-and-storage/ccus-tanajib.jpg?cx=0.5&amp;cy=0.5&amp;cw=672&amp;ch=377 672w">
+                <p>CCUS will play a role in global efforts to reduce greenhouse gas emissions, while ensuring the world can continue to thrive.</p>
+                <span>Carbon capture</span>
+            </div>
+            <div>
+                <img alt="Tanajib" loading="lazy" class="chakra-image css-0 image-loaded" sizes="313px" srcset="https://www.aramco.com/-/jssmedia/images/creating-value/sustainable-business-operations/carbon-capture-utilization-and-storage/ccus-tanajib.jpg?cx=0.5&amp;cy=0.5&amp;cw=300&amp;ch=169 300w, https://www.aramco.com/-/jssmedia/images/creating-value/sustainable-business-operations/carbon-capture-utilization-and-storage/ccus-tanajib.jpg?cx=0.5&amp;cy=0.5&amp;cw=672&amp;ch=377 672w">
+                <p>CCUS will play a role in global efforts to reduce greenhouse gas emissions, while ensuring the world can continue to thrive.</p>
+                <span>Carbon capture</span>
+            </div>
+            <div>
+                <img alt="Tanajib" loading="lazy" class="chakra-image css-0 image-loaded" sizes="313px" srcset="https://www.aramco.com/-/jssmedia/images/creating-value/sustainable-business-operations/carbon-capture-utilization-and-storage/ccus-tanajib.jpg?cx=0.5&amp;cy=0.5&amp;cw=300&amp;ch=169 300w, https://www.aramco.com/-/jssmedia/images/creating-value/sustainable-business-operations/carbon-capture-utilization-and-storage/ccus-tanajib.jpg?cx=0.5&amp;cy=0.5&amp;cw=672&amp;ch=377 672w">
+                <p>CCUS will play a role in global efforts to reduce greenhouse gas emissions, while ensuring the world can continue to thrive.</p>
+                <span>Carbon capture</span>
+            </div>
+            <div>
+                <img alt="Tanajib" loading="lazy" class="chakra-image css-0 image-loaded" sizes="313px" srcset="https://www.aramco.com/-/jssmedia/images/creating-value/sustainable-business-operations/carbon-capture-utilization-and-storage/ccus-tanajib.jpg?cx=0.5&amp;cy=0.5&amp;cw=300&amp;ch=169 300w, https://www.aramco.com/-/jssmedia/images/creating-value/sustainable-business-operations/carbon-capture-utilization-and-storage/ccus-tanajib.jpg?cx=0.5&amp;cy=0.5&amp;cw=672&amp;ch=377 672w">
+                <p>CCUS will play a role in global efforts to reduce greenhouse gas emissions, while ensuring the world can continue to thrive.</p>
+                <span>Carbon capture</span>
+            </div>
+            <div>
+                <img alt="Tanajib" loading="lazy" class="chakra-image css-0 image-loaded" sizes="313px" srcset="https://www.aramco.com/-/jssmedia/images/creating-value/sustainable-business-operations/carbon-capture-utilization-and-storage/ccus-tanajib.jpg?cx=0.5&amp;cy=0.5&amp;cw=300&amp;ch=169 300w, https://www.aramco.com/-/jssmedia/images/creating-value/sustainable-business-operations/carbon-capture-utilization-and-storage/ccus-tanajib.jpg?cx=0.5&amp;cy=0.5&amp;cw=672&amp;ch=377 672w">
+                <p>CCUS will play a role in global efforts to reduce greenhouse gas emissions, while ensuring the world can continue to thrive.</p>
+                <span>Carbon capture</span>
+            </div>
+        </div>
+     </section>
     <!--Our Mega Projects  -->
     <section></section>
     <!-- In this Section -->
@@ -154,5 +241,23 @@
         </div>
       </div>
     </section>
+
+<!-- Sustainability -->
+    
+<section class="cursor-pointer">
+    <div style="background-image: url(./images/asset\ 12.webp);" class="h-56 bg-cover bg-center flex flex-col items-center justify-center text-white">
+        <p class="text-5xl mb-6 ">Sustainability</p>
+        <div>
+            <span class="text-2xl">Learn more</span>
+        </div>
+    </div>
+</section>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.style.display = (sidebar.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
   </body>
 </html>

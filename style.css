@@ -1,16 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  
-}
 .full{
-  background-image: url(https://blocksandfiles.com/wp-content/uploads/2023/01/Cirrus-Data-graphic.jpg);
+  /* background-image: url(https://blocksandfiles.com/wp-content/uploads/2023/01/Cirrus-Data-graphic.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
@@ -31,14 +21,14 @@
 }
 .header a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .top{
   display: flex;
   gap: 20px;
 }
 .material-symbols-outlined{
-color: white;
+color: black;
 }
 .navbar{
   padding-top: px;
@@ -50,7 +40,7 @@ color: white;
 }
 .navbar a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .navbar img{
   height: 25px;
@@ -60,59 +50,4 @@ color: white;
 .nav{
   display: flex;
   gap: 20px;
-}
-.im{
-  font-family: "Comfortaa", sans-serif;
- display: flex;
- justify-content: end;
- text-align: end;
- padding-left: 50%;
- align-items:end;
- gap:5px ;
- 
-}
-.heading{
-  display: flex;
-  padding: 100px 100px;
-  /* font-family: "Comfortaa", sans-serif; */
-}
-.heading a{
- text-decoration: none;
- color: white;
-}
-.first{
-  font-size: large;
-  padding-top: 10px;
-}
-.second{
-  font-size:50px;
-  padding-top: 10px;
-}
-.th{
-  font-size: large;
-  padding-top: 10px;
-}
-.arrow{
-  display: flex;
-}
-.material-symbols-outlined{
-  padding: 9px 0;
- margin: 0 15px;
- 
-}
-.bottom {
-  display: flex;
-  justify-content:space-around;
-  color: white;
-  padding-bottom: 15px;
-  text-decoration: underline ;
-  cursor: pointer;
-}
-.part2-1{
-  margin-top: 20px;
-  padding: 30px 100px;
-  color: rgb(31,31,31);
-}
-.fonts{
-  font-family: "Outfit", sans-serif;
 }
