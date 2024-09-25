@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -9,8 +10,10 @@
 
   
 }
+=======
+>>>>>>> 087e5f4d2b06f20e6ef8508a568f895b523564bb
 .full{
-  background-image: url(https://blocksandfiles.com/wp-content/uploads/2023/01/Cirrus-Data-graphic.jpg);
+  /* background-image: url(https://blocksandfiles.com/wp-content/uploads/2023/01/Cirrus-Data-graphic.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
@@ -31,14 +34,14 @@
 }
 .header a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .top{
   display: flex;
   gap: 20px;
 }
 .material-symbols-outlined{
-color: white;
+color: black;
 }
 .navbar{
   padding-top: px;
@@ -50,7 +53,7 @@ color: white;
 }
 .navbar a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .navbar img{
   height: 25px;
@@ -60,6 +63,7 @@ color: white;
 .nav{
   display: flex;
   gap: 20px;
+<<<<<<< HEAD
 }
 .im{
   font-family: "Comfortaa", sans-serif;
@@ -853,3 +857,6 @@ footer .logo-name{
 }
 
 
+=======
+}
+>>>>>>> 087e5f4d2b06f20e6ef8508a568f895b523564bb

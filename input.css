@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.element-blue{
+    @apply hover:text-text-blue hover:underline
+}
