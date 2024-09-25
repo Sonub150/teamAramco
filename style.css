@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -10,10 +9,8 @@
 
   
 }
-=======
->>>>>>> 087e5f4d2b06f20e6ef8508a568f895b523564bb
 .full{
-  /* background-image: url(https://blocksandfiles.com/wp-content/uploads/2023/01/Cirrus-Data-graphic.jpg); */
+  background-image: url(https://blocksandfiles.com/wp-content/uploads/2023/01/Cirrus-Data-graphic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
@@ -34,14 +31,14 @@
 }
 .header a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .top{
   display: flex;
   gap: 20px;
 }
 .material-symbols-outlined{
-color: black;
+color: white;
 }
 .navbar{
   padding-top: px;
@@ -53,17 +50,16 @@ color: black;
 }
 .navbar a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .navbar img{
   height: 25px;
   width: 30px;
   
 }
-.nav{
+.navb{
   display: flex;
   gap: 20px;
-<<<<<<< HEAD
 }
 .im{
   font-family: "Comfortaa", sans-serif;
@@ -115,11 +111,9 @@ color: black;
 .part2-1{
  
   padding: 30px 100px;
-  color: rgb(31,31,31);
+  color: rgb(17, 16, 16);
 }
-.part2{
-  background-color: #F2F2F2;
-}
+
 .fonts{
   font-family: "Outfit", sans-serif;
 }
@@ -243,6 +237,28 @@ max-height: 140%;
   display: flex;
   flex-direction: column-reverse;
 }
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  
+  margin-right: 10px;
+display: flex;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
 .ca img{
   max-width: 100%;
   max-height: auto;
@@ -666,6 +682,7 @@ a {
   background-color: rgb(50,50,50);
   color: white;
   cursor: pointer;
+  padding-bottom:30px
 }
 .pg8-1{
   padding-top: 60px;
@@ -680,6 +697,10 @@ a {
 .pg8:hover{
   background-color: rgb(50,50,50);
   color: rgb(12, 12, 12);
+}
+.pg9{
+  padding:10px 10px;
+  margin:10px 10px
 }
 .pg9-1{
   padding: 10px 30px;
@@ -857,6 +878,3 @@ footer .logo-name{
 }
 
 
-=======
-}
->>>>>>> 087e5f4d2b06f20e6ef8508a568f895b523564bb
