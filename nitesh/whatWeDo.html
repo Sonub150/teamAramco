@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>What we do | Aramco</title>
   </head>
-  <body class="max-[600px]:p-6 w-[100%]">
+  <body class="max-[800px]:p-6 w-[100%]">
 
     <!-- Header section -->
-    <header>
+    <header id="head">
       <nav>
-        <div class="full max-w-screen-2xl mx-auto">
+        <div class="full max-w-screen-2xl mx-auto max-[800px]:hidden">
   
-            <div class="header">
+            <div class="absolute top-0 flex gap-4 pt-3 m-5 text-start w-full z-10 ">
               <div class="top">
                 <ul><a href="">العربية</a></ul>
                 <ul><a href="">|</a></ul>
@@ -25,13 +25,14 @@
               <ul class="spac"><a href="">Global contacts</a></ul>
             </div>
               
-            <div class="navbar mb-8">
+            <div class="flex w-full justify-between items-center mb-8 max-[800px]:hidden">
+
               
                 
                   <div class="nav-left">
                     <span class="material-symbols-outlined cursor-pointer">search</span>
                     <div class="nav">
-                      <ul class="flex gap-6 max-[600px]:">
+                      <ul class="flex gap-6">
                           <li><a href="#">About us</a></li>
                           <li class="hover:underline"><a href="#" onclick="toggleSidebar()"><span class="text-text-blue p-0 m-0">What we do</span></a></li>
                           <li><a href="#">Sustainability</a></li>
@@ -41,25 +42,55 @@
                       </ul>
                     </div>
                   </div>
-                  <img src="https://www.aramco.com/dist/aramco-jss/static/media/logo-dark.21f5819347052c1de18122d8524f893a.svg" alt="">
+                  <img class="h-7" src="https://www.aramco.com/dist/aramco-jss/static/media/logo-dark.21f5819347052c1de18122d8524f893a.svg" alt="">
             </div>
               
       </nav>
     </header>
 
+   <!-- Hamburger menu -->
+<section class="flex hidden max-[800px]:flex max-[800px]:justify-between">
+  <span class="material-symbols-outlined cursor-pointer" onclick="toggleOverlay()">menu</span>
+  <img class="h-7" src="https://www.aramco.com/dist/aramco-jss/static/media/logo-dark.21f5819347052c1de18122d8524f893a.svg" alt="">
+</section>
+
+<!-- Overlay -->
+<div id="overlay" class="fixed inset-0 h-full bg-black bg-opacity-70 flex items-center justify-center hidden">
+  <div class="bg-white rounded shadow-lg h-full w-full p-6">
+    <div class="flex items-center justify-between my-6">
+      <span class="material-symbols-outlined cursor-pointer">search</span>
+      <span class="mr-10">Home </span>
+    </div>
+  
+    <button class="mt-4 p-2 text-end" onclick="toggleOverlay()"><span class="material-symbols-outlined cursor-pointer text-end">
+      close
+      </span></button>
+    <ul class="flex flex-col gap-5">
+      <li>ABOUT US</li>
+      <li>WHAT WE DO</li>
+      <li>SUSTAINABILITY</li>
+      <li>INVESTORS</li>
+      <li>NEW & MEDIA</li>
+      <li>CARRERS</li>
+    </ul>
+  </div>
+</div>
+
     <!-- Side bar section -->
     <section>
         <div class="absolute top-0 left-0 mt-36 bg-text-head w-2/6 h-[calc(100vh-9rem)] hidden" id="sidebar">
-            <p  onclick="toggleSidebar()" class="cursor-pointer" >cross</p>
+          <span class="material-symbols-outlined cursor-pointer text-text-blue" onclick="toggleSidebar()">
+            close
+            </span>
             <ul class="text-white ml-[35%] mt-[15%] flex flex-col gap-4">
                 <li class="cursor-pointer element-blue">What we do</li>
-                <li class="cursor-pointer element-blue">What we do</li>
-                <li class="cursor-pointer element-blue">What we do</li>
-                <li class="cursor-pointer element-blue">What we do</li>
-                <li class="cursor-pointer element-blue">What we do</li>
-                <li class="cursor-pointer element-blue">What we do</li>
-                <li class="cursor-pointer element-blue">What we do</li>
-                <li class="cursor-pointer element-blue">What we do</li>
+                <li class="cursor-pointer element-blue">Energy innovation</li>
+                <li class="cursor-pointer element-blue">Energy prodcuts</li>
+                <li class="cursor-pointer element-blue">Operations</li>
+                <li class="cursor-pointer element-blue">Mega projects</li>
+                <li class="cursor-pointer element-blue">Commercial ecosystems</li>
+                <li class="cursor-pointer element-blue">Customers</li>
+                <li class="cursor-pointer element-blue">Suppliers</li>
             </ul>
         </div>
     </section>
@@ -378,9 +409,39 @@
 </footer>
     <script>
         function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.style.display = (sidebar.style.display === 'block') ? 'none' : 'block';
-        }
+    const sidebar = document.getElementById('sidebar');
+    const head = document.getElementById('head'); 
+    const body = document.body;
+
+   
+    const isVisible = sidebar.style.display === 'block';
+
+   
+    sidebar.style.display = isVisible ? 'none' : 'block';
+
+    
+    if (isVisible) {
+        head.style.backgroundColor = 'white'; 
+        head.style.color = '#1f1f1f'; 
+    } else {
+        head.style.backgroundColor = '#1f1f1f'; 
+        head.style.color = 'white'; 
+    }
+
+    
+    sidebar.style.backgroundColor = (sidebar.style.display === 'block') ? '#1f1f1f' : 'white';
+
+  
+    body.classList.toggle('overflow-hidden');
+}
+
+        function toggleOverlay() {
+        const overlay = document.getElementById('overlay');
+        const body = document.body;
+
+        overlay.classList.toggle('hidden');
+        body.classList.toggle('overflow-hidden'); // Prevent scrolling
+    }
     </script>
   </body>
 </html>
