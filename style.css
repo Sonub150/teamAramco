@@ -8,15 +8,15 @@
   
 }
 .header{
-  position: fixed;
+  position: absolute;
   top: 0;
+
   display: flex;
   padding-top: 10px 10px ;
   margin: 15px 5px;
   gap: 50px;
   text-align: start;
   width: 100%;
- 
   z-index: 1;
 }
 .header a{
@@ -31,22 +31,33 @@
 color: black;
 }
 .navbar{
-  padding-top: px;
-  padding-left: 5%;
   display: flex;
-  gap: 0px;
-  justify-content: start;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
 }
+
+.navbar img {
+  height: 25px;
+}
+
+
 .navbar a{
   text-decoration: none;
   color: black;
 }
-.navbar img{
-  height: 25px;
-  width: 30px;
-  
+
+
+.nav-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.nav-left > span{
+ margin:0px 50px 0px 0px;
+}
+
 .nav{
   display: flex;
   gap: 20px;
