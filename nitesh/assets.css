@@ -67,8 +67,35 @@
 
   #overlay span {
     color: #00a3e0;
-    background-color: #00a3e0;
-    border: 2px red solid; 
     padding: 4px; 
     border-radius: 4px;
 }
+
+.main-carousel{
+  margin-left: -1200px;
+}
+
+.carousel-cell{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 400px;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.carousel-cell img{
+  height: 60%;
+  width: 100%;
+}
+
+#big{
+  height: 90%;
+  width: 100%;
+}
+
+#second-big{
+  height: 70%;
+  width: 100%;
+}
+
