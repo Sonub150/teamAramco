@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -273,7 +274,6 @@ footer .logo-name{
 .styled-table {
   border-collapse: collapse;
   justify-content: start;
-  
   font-size: 0.9em;
   font-family: sans-serif;
   min-width: 400px;
@@ -291,7 +291,6 @@ footer .logo-name{
   padding: 10px 20px;
   padding-bottom: 10px;
   padding-top: 20px;
-
 }
 
 .styled-table tbody tr {
@@ -306,147 +305,367 @@ footer .logo-name{
   border-bottom: 2px solid #0b8c72;
 }
 
-/* .styled-table tbody tr.active-row {
-  font-weight: bold;
-  color: #009879;
-} */
+/* Large screens (desktops) */
+@media only screen and (min-width: 1200px) {
+  .styled-table {
+    font-size: 1.1em;
+    min-width: 600px;
+  }
+  .styled-table th,
+  .styled-table td {
+    padding: 15px 30px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+  }
+}
 
-/* .ft{
-  padding-left: 100px;
-} */
-.full{
- background-color: white;
+/* Medium screens (laptops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .styled-table {
+    font-size: 1em;
+    min-width: 500px;
+  }
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 25px;
+    padding-bottom: 12px;
+    padding-top: 25px;
+  }
+}
+
+/* Small screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .styled-table {
+    font-size: 0.9em;
+    min-width: 400px;
+  }
+  .styled-table th,
+  .styled-table td {
+    padding: 10px 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  .styled-table {
+    overflow-x: auto;
+  }
+}
+
+/* Extra small screens (mobiles) */
+@media only screen and (max-width: 767px) {
+  .styled-table {
+    font-size: 0.8em;
+    min-width: 300px;
+  }
+  .styled-table th,
+  .styled-table td {
+    padding: 8px 15px;
+    padding-bottom: 8px;
+    padding-top: 15px;
+  }
+  .styled-table {
+    overflow-x: auto;
+  }
+}
+
+/* Extra extra small screens (mobiles) */
+@media only screen and (max-width: 480px) {
+  .styled-table {
+    font-size: 0.7em;
+    min-width: 200px;
+  }
+  .styled-table th,
+  .styled-table td {
+    padding: 5px 10px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+  .styled-table {
+    overflow-x: auto;
+  }
+}
+.full {
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 10px;
   padding-top: 120px;
-  
-  
 }
-.header{
+
+.header {
   position: fixed;
   top: 0;
   display: flex;
-  padding-top: 10px 10px ;
+  padding-top: 10px 10px;
   margin: 15px 5px;
   gap: 50px;
   text-align: start;
   width: 100%;
-  
   z-index: 1;
 }
-.header a{
+
+.header a {
   text-decoration: none;
   color: #000;
 }
-.header a:hover{
-  color:cyan;
+
+.header a:hover {
+  color: cyan;
 }
-.top{
+
+.top {
   display: flex;
   gap: 20px;
 }
-.material-symbols-outlined{
-color: white;
+
+.material-symbols-outlined {
+  color: white;
 }
-.navbar{
-  padding-top: px;
+
+.navbar {
+  padding-top: 20px;
   padding-left: 5%;
   display: flex;
   gap: 0px;
   justify-content: start;
   align-items: center;
 }
-.navbar a{
+
+.navbar a {
   text-decoration: none;
   color: #000;
 }
-.navbar a:hover{
+
+.navbar a:hover {
   color: cyan;
 }
-.navbar img{
+
+.navbar img {
   height: 25px;
   width: 30px;
-  
-}
-.navb{
-  display: flex;
-  gap: 20px;
-}
-.im{
-  font-family: "Comfortaa", sans-serif;
- display: flex;
- justify-content: end;
- text-align: end;
- padding-left: 50%;
- align-items:end;
- gap:5px ;
-}
-.navbar img{
-  height: 25px;
-  width: 30px;
-  
-}
-.navb{
-  display: flex;
-  gap: 20px;
-}
-.im{
-  font-family: "Comfortaa", sans-serif;
- display: flex;
- justify-content: end;
- text-align: end;
- padding-left: 50%;
- align-items:end;
- gap:5px ;
- 
 }
 
+.navb {
+  display: flex;
+  gap: 20px;
+}
+
+.im {
+  font-family: "Comfortaa", sans-serif;
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  padding-left: 50%;
+  align-items: end;
+  gap: 5px;
+}
+
+/* Large screens (desktops) */
+/* @media only screen and (min-width: 1200px) {
+  .full {
+    padding-top: 150px;
+  }
+  .header {
+    padding-top: 15px;
+  }
+  .navbar {
+    padding-top: 30px;
+  }
+  .im {
+    padding-left: 60%;
+  }
+}
+
+/* Medium screens (laptops) */
+ @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .full {
+    padding-top: 120px;
+  }
+  .header {
+    padding-top: 10px;
+  }
+  .navbar {
+    padding-top: 20px;
+  }
+  .im {
+    padding-left: 55%;
+  }
+} 
+
+/* Small screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .full {
+    padding-top: 90px;
+  }
+  .header {
+    padding-top: 5px;
+  }
+  .navbar {
+    padding-top: 15px;
+  }
+  .im {
+    padding-left: 50%;
+  }
+  .navb {
+    flex-direction: column;
+  }
+}
+
+/* Extra small screens (mobiles) */
+@media only screen and (max-width: 767px) {
+  .full {
+    padding-top: 60px;
+  }
+  .header {
+    padding-top: 0;
+  }
+  .navbar {
+    padding-top: 10px;
+  }
+  .im {
+    padding-left: 40%;
+  }
+  .navb {
+    flex-direction: column;
+  }
+  .navbar img {
+    width: 100%;
+  }
+}
+
+/* Extra extra small screens (mobiles) */
+@media only screen and (max-width: 480px) {
+  .full {
+    padding-top: 40px;
+  }
+  .header {
+    padding-top: 0;
+  }
+  .navbar {
+    padding-top: 5px;
+  }
+  .im {
+    padding-left: 30%;
+  }
+  .navb {
+    flex-direction: column;
+  }
+  .navbar img {
+    width: 100%;
+  }
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  margin-right: 20px;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  color: #000;
+  cursor: pointer;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar-header img {
+  margin-right: 10px;
+}
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+.sidebar-footer p {
+  cursor: pointer;
+}
 
     </style>
+    <script>
+      let sidebarVisible = false;
+
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebarVisible = !sidebarVisible;
+  sidebar.style.display = sidebarVisible ? 'block' : 'none';
+}
+    </script>
   </head>
   <body>
     <div class="full">
-  
-      <div class="header ">
+      <div class="header">
+        <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleSidebar()">
+          <span class="material-symbols-outlined">menu</span>
+        </div>
         <div class="top">
-          <ul class=""><a href="" >العربية</a></ul>
+          <ul><a href="">العربية</a></ul>
           <ul><a href="">|</a></ul>
           <ul><a href="">English</a></ul>
         </div>
         <ul class="spac"><a href="">Global contacts</a></ul>
       </div>
-        
+    </div>
       <div class="navbar">
         <span class="material-symbols-outlined">search</span>
         <div class="navb">
-          <ul><a href="#"onclick="toggleSidebar()">About us</a></ul>
-          <ul><a href="#"onclick="toggleSidebar()">What we do</a></ul>
-          <ul><a href="#"onclick="toggleSidebar()">Sustainability</a></ul>
-          <ul><a href="#"onclick="toggleSidebar()">Investors</a></ul>
-          <ul><a href="#"onclick="toggleSidebar()">News & Media</a></ul>
-          <ul><a href="#"onclick="toggleSidebar()">Careers</a></ul>
+          <ul><a href="#" onclick="toggleSidebar()">About us</a></ul>
+          <ul><a href="#" onclick="toggleSidebar()">What we do</a></ul>
+          <ul><a href="#" onclick="toggleSidebar()">Sustainability</a></ul>
+          <ul><a href="#" onclick="toggleSidebar()">Investors</a></ul>
+          <ul><a href="#" onclick="toggleSidebar()">News & Media</a></ul>
+          <ul><a href="#" onclick="toggleSidebar()">Careers</a></ul>
         </div>
         <div class="im">
-        <span><a href=""><strong>aramco</strong></a></span>
-        <img  src="./imgs/900666e4d3f1e59beecd1f0122bfc3cb.jpg" alt="">
-       </div>
-      </div> 
-     </div>
-     <section>
-      <div class="absolute top-0 left-0 mt-36 bg-text-head w-2/6 h-[calc(100vh-9rem)] hidden" id="sidebar">
-          <p  onclick="toggleSidebar()" class="cursor-pointer" >cross</p>
-          <ul class="text-white ml-[35%] mt-[15%] flex flex-col gap-4">
-              <li class="cursor-pointer element-blue">About us</li>
-              <li class="cursor-pointer element-blue">What we do</li>
-              <li class="cursor-pointer element-blue">Sustainability</li>
-              <li class="cursor-pointer element-blue">Investors</li>
-              <li class="cursor-pointer element-blue">News & Media</li>
-              <li class="cursor-pointer element-blue">Careers</li>
-          </ul>
+          <span><a href=""><strong>aramco</strong></a></span>
+          <img src="./imgs/900666e4d3f1e59beecd1f0122bfc3cb.jpg" alt="image">
+        </div>
       </div>
-  </section>
-  
+    </div>
+    
+    <section>
+      <div id="sidebar" style="position: absolute; top: 0; left: 0; margin-top: 36px; background-color: #070606; width: 250px; height: calc(100vh - 9rem); display: none;">
+        <div class="sidebar-header">
+          <img src="./imgs/900666e4d3f1e59beecd1f0122bfc3cb.jpg" alt="Logo" style="width: 40px; height: 40px; margin: 20px;">
+          <p style="color: #e6dbdb; font-size: 18px; font-weight: bold;">Aramco</p>
+        </div>
+        <ul style="color: #e6dbdb; margin-left: 20px; margin-top: 20px; flex-direction: column; gap: 10px;">
+          <li class="cursor-pointer element-blue">About us</li>
+          <li class="cursor-pointer element-blue">What we do</li>
+          <li class="cursor-pointer element-blue">Sustainability</li>
+          <li class="cursor-pointer element-blue">Investors</li>
+          <li class="cursor-pointer element-blue">News & Media</li>
+          <li class="cursor-pointer element-blue">Careers</li>
+        </ul>
+        <div class="sidebar-footer">
+          <p onclick="toggleSidebar()">cross</p>
+        </div>
+      </div>
+    </section>
   <section>
     <div class=" bg-no-repeat bg-cover h-[40rem] w-[80rem] ml-36 pb-96 bg-center rounded-xl " style="background-image: url(./imgs/j10.jpg);">
       <div class="mt-40 pb-10">
@@ -582,31 +801,31 @@ color: white;
                    <td><a href="">Q2 2024 interim report</a></td>
                    <td>August 06, 202.pdf1.8MB</td>
                    <td class="to-blue-600">
-                     <span class="material-symbols-outlined"> arrow_downward </span>
+                     <span class="material-symbols-outlined text-black"> arrow_downward </span>
                    </td>
-                   <td><span class="material-symbols-outlined"> add </span></td>
+                   <td><span class="material-symbols-outlined text-black"> add </span></td>
                  </tr>
                  <tr>
                    <td><a href="">Our 2023 Sustainability Repor</a></td>
                    <td>May 27, 2024 .pdf 13.7MB</td>
                    <td>
-                     <span class="material-symbols-outlined"> arrow_downward </span>
+                     <span class="material-symbols-outlined text-black"> arrow_downward </span>
                    </td>
-                   <td><span class="material-symbols-outlined"> add </span></td>
+                   <td><span class="material-symbols-outlined text-black"> add </span></td>
                  </tr>
                  <tr class="active-row"></tr>
                  <tr>
                    <td><a href="">Annual Report 2023 </a></td>
                    <td>March 11, 2024 .pdf 18.2MB</td>
                    <td>
-                     <span class="material-symbols-outlined"> arrow_downward </span>
+                     <span class="material-symbols-outlined text-black"> arrow_downward </span>
                    </td>
-                   <td><span class="material-symbols-outlined"> add </span></td>
+                   <td><span class="material-symbols-outlined text-black"> add </span></td>
                  </tr>
                  <tr class="la" >
                    <td> </td>
                    <td ><a href=""> Download zip-file</a></td>
-                   <td ><span class="material-symbols-outlined">
+                   <td ><span class="material-symbols-outlined text-black">
                      download_for_offline
                      </span></td>
                  </tr>

@@ -9,61 +9,83 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" type="x-icon" href="900666e4d3f1e59beecd1f0122bfc3cb.jpg">
-    <title>aramco</title>
+    <title>Aramco</title>
+    <script>
+      function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
+}
+    </script>
 </head>
 <body>
   
   <div class="full">
-  
-  <div class="header">
-    <div class="top">
-      <ul><a href="">العربية</a></ul>
-      <ul><a href="">|</a></ul>
-      <ul><a href="">English</a></ul>
+    <div class="header">
+      <!-- Hamburger icon -->
+      <div class="hamburger" onclick="toggleSidebar()">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+      <div class="top">
+        <ul><a href="">العربية</a></ul>
+        <ul><a href="">|</a></ul>
+        <ul><a href="">English</a></ul>
+      </div>
+      <ul class="spac"><a href="">Global contacts</a></ul>
     </div>
-    <ul class="spac"><a href="">Global contacts</a></ul>
+    <div class="navbar">
+      <div class="navb">
+        <ul><a href="#">About us</a></ul>
+        <ul><a href="#">What we do</a></ul>
+        <ul><a href="#">Sustainability</a></ul>
+        <ul><a href="#">Investors</a></ul>
+        <ul><a href="#">News & Media</a></ul>
+        <ul><a href="#">Careers</a></ul>
+      </div>
+      <div id="sidebar" style="display: none;">
+        <div class="logo">
+          <br>
+          <br>
+          <br>
+          <a href="https://www.aramco.com/">
+            <img src="./main page imgs/900666e4d3f1e59beecd1f0122bfc3cb.jpg" alt="Aramco Logo">
+          </a>
+          <h3>Aramco</h3>
+        </div>
+        <p onclick="toggleSidebar()">cross</p>
+        <br>
+        <br>
+        <br>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">What we do</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">News & Media</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="im">
+        <span><a href=""><strong>aramco</strong></a></span>
+        <img src="./main page imgs/900666e4d3f1e59beecd1f0122bfc3cb.jpg" alt="">
+      </div>
+    </div>
+    <div class="heading">
+      <div class="hero">
+        <ul class="first"><a href="">ELEMENTS MAGAZINE </a></ul>
+        <ul class="second"><a href="">heading for hydrogen and a lower- <br> carbon future</a></ul>
+        <div class="arrow">
+          <ul class="th"><a href="">Read more </a></ul>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <ul><a href=""></a> <strong>ELEMENTS MAGAZINE</strong></ul>
+      <ul><a href=""></a><strong>ASTON MARTIN PARTNERSHIP</strong></ul>
+      <ul><a href=""></a><strong>POWERED BY HOW</strong></ul>
+      <ul><a href=""></a><strong>RESULT ANNOUCNCEMENT</strong></ul>
+    </div>
   </div>
-    
-  <div class="navbar">
-    <span class="material-symbols-outlined">search</span>
-    <div class="navb">
-      <ul><a href="#">About us</a></ul>
-      <ul><a href="#">What we do</a></ul>
-      <ul><a href="#">Sustainability</a></ul>
-      <ul><a href="#">Investors</a></ul>
-      <ul><a href="#">News & Media</a></ul>
-      <ul><a href="#">Careers</a></ul>
-    </div>
-    <div class="im">
-    <span><a href=""><strong>aramco</strong></a></span>
-    <img  src="./900666e4d3f1e59beecd1f0122bfc3cb.jpg" alt="">
-   </div>
-  </div> 
-
-  
-  
-  
-   <div class="heading">
-    <div class="hero">
-      <ul class="first"><a href="">ELEMENTS MAGAZINE </a></ul>
-      <ul class="second"><a href="">heading for hydrogen and a lower- <br> carbon future</a></ul>
-      <div class="arrow">
-      <ul class="th"><a href="">Read more </a></ul>
-      <span class="material-symbols-outlined">arrow_forward</span>
-    </div>
-    </div>
-   </div>
-   <div class="bottom">
-    <ul><a href=""></a> <strong>ELEMENTS MAGAZINE</strong></ul>
-
-    <ul><a href=""></a><strong>ASTON MARTIN PARTNERSHIP</strong></ul>
-    
-    <ul><a href=""></a><strong>POWERED BY HOW</strong></ul>
-    
-    <ul><a href=""></a><strong>RESULT ANNOUCNCEMENT</strong></ul>
- 
-  </div>
- </div>
  <div class="part2">
   <div class="part2-1">
     <h3>Discover Aramco</h3>
@@ -123,7 +145,7 @@
   <div class="carousel" data-flickity='{ "autoPlay": true }'></div>
   <div class="cards-con">
     <div class="ca">
-      <img src="imj1.webp" alt="">
+      <img src="main page imgs/imj1.webp" alt="">
       <div class="cards-ct">
         <h3>Why we invest in our people </h3>
         <!-- <p>ll </p> -->
@@ -134,7 +156,7 @@
     
    
     <div class="ca">
-      <img src="imj2.webp" alt="">
+      <img src="main page imgs/imj2.webp" alt="">
       <div class="cards-ct">
         <h3>Aramco and Aston Martin <br> Racing take on F1</h3>
         <!-- <p>ll </p> -->
@@ -143,7 +165,7 @@
       </div>
     </div>
     <div class="ca">
-      <img src="imj3.webp" alt="">
+      <img src="./main page imgs/imj3.webp" alt="">
       <div class="cards-ct">
         <h3>The Manifa Story</h3>
         <!-- <p>ll </p> -->
@@ -152,7 +174,7 @@
       </div>
     </div>
     <div class="ca">
-      <img src="imj4.webp" alt="">
+      <img src="main page imgs/imj4.webp" alt="">
       <div class="cards-ct">
         <h3>Our perspective </h3>
         <!-- <p>ll</p> -->
@@ -161,7 +183,7 @@
       </div>
     </div>
     <div class="ca">
-      <img src="imj5.webp" alt="">
+      <img src="main page imgs/imj5.webp" alt="">
       <div class="cards-ct">
         <h3>Managing our footprint </h3>
         <!-- <p>ll </p> -->
@@ -170,7 +192,7 @@
       </div>
     </div>
     <div class="ca">
-      <img src="imj6.webp" alt="">
+      <img src="./main page imgs/imj6.webp" alt="">
       <div class="cards-ct">
         <h3>Resources for journalists</h3>
         <!-- <p>ll </p> -->
@@ -195,7 +217,7 @@
    <div class="wrap">
     <div class="box">
       <div class="box-top">
-        <img class="box-image" src="i3j1.webp">
+        <img class="box-image" src="./main page imgs/i3j1.webp">
         <div class="title-flex">
           <h3 class="box-title">Climate and energy</h3>
           <p class="user-follow-info">17 Projects</p>
@@ -207,7 +229,7 @@
     </div>
     <div class="box">
       <div class="box-top">
-        <img class="box-image" src="i3j2.webp">
+        <img class="box-image" src="./main page imgs/i3j2.webp">
         <div class="title-flex">
           <h3 class="box-title">People and safety</h3>
           <p class="user-follow-info">33 Projects</p>
@@ -218,7 +240,7 @@
     </div>
     <div class="box">
       <div class="box-top">
-        <img class="box-image" src="i3j3.webp">
+        <img class="box-image" src="./main page imgs/i3j3.webp">
         <div class="title-flex">
           <h3 class="box-title">Biodiversity initiatives</h3>
           <p class="user-follow-info">26 Projects</p>
@@ -240,7 +262,7 @@
       <ul class="car">
         <li>
           <a href="" class="card6">
-            <img src="i2j1.webp" class="card6__image" alt="" />
+            <img src="./main page imgs/i2j1.webp" class="card6__image" alt="" />
             <div class="card6__overlay">
               <div class="card6__header">
                                 
@@ -256,7 +278,7 @@
         </li>
         <li>
           <a href="" class="card6">
-            <img src="i6j1.webp" class="card__image" alt="" />
+            <img src="./main page imgs/i6j1.webp" class="card__image" alt="" />
             <div class="card6__overlay">        
               <div class="card6__header">
                
@@ -272,7 +294,7 @@
         </li>
         <li>
           <a href="" class="card6">
-            <img src="i6j2.webp" class="card6__image" alt="" />
+            <img src="./main page imgs/i6j2.webp" class="card6__image" alt="" />
             <div class="card6__overlay">
               <div class="card6__header">
                 
@@ -288,7 +310,7 @@
         </li>
         <li>
           <a href="" class="card6">
-            <img src="i2j2.webp" class="card6__image" alt="" />
+            <img src="./main page imgs/i2j2.webp" class="card6__image" alt="" />
             <div class="card6__overlay">
               <div class="card6__header">
        
@@ -407,27 +429,27 @@
                       <span class="logo_name">QUICK LINKS</span>
               </div>
               
-              <p>Careers</p>
-              <p>investors</p>
-              <p>Suppliers</p>
-              <p>Customers</p>
-              <p>E-Services login</p>
-              <p>Latest news</p>
-              <p>Auditor hotline</p>
-              <p>Global contact</p>
+              <p class="co">Careers</p>
+              <p class="co">investors</p>
+              <p class="co">Suppliers</p>
+              <p class="co">Customers</p>
+              <p class="co">E-Services login</p>
+              <p class="co">Latest news</p>
+              <p class="co">Auditor hotline</p>
+              <p class="co">Global contact</p>
             
           </div>
           <div class="col">
               <h3>SIT INFORMATION</h3>
               <p>
-                  <a href="">Cookies notices</a>
-                  <a href=""> Scam and fraud alert</a>
-                  <a href="">Terms and condtions</a>
-                  <a href=""> Privacy notice</a>
-                  <a href=""> Accessibility</a>
-                  <a href="">Sitemap</a>
+                  <a href="" class="co">Cookies notices</a>
+                  <a href="" class="co"> Scam and fraud alert</a>
+                  <a href="" class="co">Terms and condtions</a>
+                  <a href="" class="co"> Privacy notice</a>
+                  <a href="" class="co"> Accessibility</a>
+                  <a href="" class="co">Sitemap</a>
               <p class="mail-id">example@gmail.com</p>
-              <p>+9111xxxxxxxx</p>
+              <p class="co">+9111xxxxxxxx</p>
             </p>
           </div>
           <div class="col">
@@ -461,7 +483,7 @@
       <hr/>
       <p class="copyright">© 2024 Saudi Arabian Oil Co.
       All rights are reserved</p>
-       <div class="credit">aramco <img src="900666e4d3f1e59beecd1f0122bfc3cb.jpg" alt="" width="20px" height="20px"></div>
+       <div class="credit">aramco <img src="./main page imgs/900666e4d3f1e59beecd1f0122bfc3cb.jpg" alt="" width="20px" height="20px"></div>
         <div class="end">
         <!-- <a href=""><span> aramco<img src="./900666e4d3f1e59beecd1f0122bfc3cb.jpg" alt="" width="20px" height="20px"></span></a> -->
         </div>
