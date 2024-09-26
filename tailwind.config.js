@@ -10,7 +10,7 @@ module.exports = {
         'bg-dark' : '#f2f2f2',
         'text-head' : '#1f1f1f',
         'text-blue' : '#00a3e0'
-      }
+      },
     },
   },
   plugins: [],
