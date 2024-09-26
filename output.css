@@ -759,10 +759,6 @@ video {
   margin: 1.25rem;
 }
 
-.m-6 {
-  margin: 1.5rem;
-}
-
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -776,11 +772,6 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .my-6 {
@@ -824,6 +815,10 @@ video {
   margin-top: -2rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -834,6 +829,10 @@ video {
 
 .mb-16 {
   margin-bottom: 4rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-3 {
@@ -912,6 +911,10 @@ video {
   margin-left: 70rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -956,8 +959,8 @@ video {
   margin-top: 15%;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .box-border {
@@ -1129,6 +1132,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-10 {
@@ -2069,10 +2080,6 @@ video {
   border-radius: 1rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -2164,10 +2171,6 @@ video {
   border-width: 4px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -2230,19 +2233,9 @@ video {
   border-style: none;
 }
 
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .border-red-600 {
   --tw-border-opacity: 1;
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2258,11 +2251,6 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-blue-800 {
@@ -2458,10 +2446,6 @@ video {
   padding: 1.5rem;
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2580,6 +2564,10 @@ video {
   padding-top: 7rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .pt-40 {
   padding-top: 10rem;
 }
@@ -2598,10 +2586,6 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
 }
 
 .text-left {
@@ -2726,6 +2710,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -3082,10 +3070,6 @@ video {
 
 .ring-inset {
   --tw-ring-inset: inset;
-}
-
-.ring-offset-2 {
-  --tw-ring-offset-width: 2px;
 }
 
 .blur {
