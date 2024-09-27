@@ -1,0 +1,14 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+  <!-- Outer Circle -->
+  <circle cx="16" cy="16" r="15" fill="none" stroke="#0373fc" stroke-width="2"/>
+  
+  <!-- Reduced line below the arrow -->
+  <line fill="none" stroke="#0373fc" stroke-width="2" stroke-miterlimit="10" x1="25" y1="23" x2="7" y2="23"/>
+  
+  <!-- Reduced center line -->
+  <line fill="none" stroke="#0373fc" stroke-width="2" stroke-miterlimit="10" x1="16" y1="20" x2="16" y2="7"/>
+  
+  <!-- Reduced polyline for the arrow -->
+  <polyline fill="none" stroke="#0373fc" stroke-width="2" stroke-miterlimit="10" points="10.5,15 16,20 21.5,15"/>
+</svg>
