@@ -11,10 +11,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>What we do | Aramco</title>
   </head>
-  <body class="max-[800px]:p-6 w-[100%]">
+  <body class="max-[800px]:p-6 w-[100%] ">
+
+    <!-- Cookie section -->
+
+    <span class="material-symbols-outlined fixed bottom-3 left-6  tool-tip">
+      verified_user
+      </span>
+
 
     <!-- Header section -->
-    <header id="head">
+    <header id="head" class="min-[1000px]:p-6">
       <nav>
         <div class="full max-w-screen-2xl mx-auto max-[800px]:hidden">
   
@@ -35,7 +42,7 @@
                     <span class="material-symbols-outlined cursor-pointer">search</span>
                     <div class="nav">
                       <ul class="flex gap-6">
-                          <li><a href="#">About us</a></li>
+                          <li><a href="../index.html">About us</a></li>
                           <li class="hover:underline"><a href="#" onclick="toggleSidebar()"><span class="text-text-blue p-0 m-0">What we do</span></a></li>
                           <li><a href="#">Sustainability</a></li>
                           <li><a href="#">Investors</a></li>
@@ -80,13 +87,13 @@
 
     <!-- Side bar section -->
     <section>
-        <div class="absolute top-0 left-0 mt-36 bg-text-head w-2/6 h-[calc(100vh-9rem)] hidden" id="sidebar">
-          <span class="material-symbols-outlined cursor-pointer text-text-blue" onclick="toggleSidebar()">
+        <div class="absolute top-0 left-0 mt-52 bg-text-head w-2/6 h-[calc(100vh-9rem)] hidden" id="sidebar">
+          <span class="material-symbols-outlined cursor-pointer text-text-blue relative left-[90%]" onclick="toggleSidebar()">
             close
             </span>
             <ul class="text-white ml-[35%] mt-[15%] flex flex-col gap-4">
                 <li class="cursor-pointer element-blue">What we do</li>
-                <li class="cursor-pointer element-blue">Energy innovation</li>
+                <li class="cursor-pointer element-blue"><a href="./energyInnovation.html"> Energy innovation</a></li>
                 <li class="cursor-pointer element-blue">Energy prodcuts</li>
                 <li class="cursor-pointer element-blue">Operations</li>
                 <li class="cursor-pointer element-blue">Mega projects</li>
@@ -101,7 +108,7 @@
 
 
     <!-- Hero Scrtion -->
-     <section class="max-w-screen-2xl mx-auto border border-red-600 border-4 text-white">
+     <section class="max-w-screen-2xl mx-auto text-white min-[1000px]:p-6">
         <div style="background-image: url(./images/asset\ 1.webp) ;" class="bg-cover bg-center rounded-xl p-4 h-[1000px] max-[600px]:h-[600px]">
             <div class="">
                     
@@ -118,8 +125,8 @@
         </div>
      </section>
     <!-- Free text -->
-    <section class=" max-w-screen-2xl  mx-auto border border-red-600 border-4">
-      <div class="flex max-[600px]:flex-col max-[600px]:gap-4">
+    <section class=" max-w-screen-2xl  mx-auto mt-16 min-[1000px]:p-6">
+      <div class="flex gap-5 max-[600px]:flex-col max-[600px]:gap-4">
         <p>
           For 90 years, Aramco has provided vital energy to power businesses,
           people, and progress around the world. As one of the world’s leading
@@ -150,7 +157,7 @@
       </div>
     </section>
     <!-- Image Section -->
-     <section class="max-w-screen-2xl mx-auto mt-20">
+     <section class="max-w-screen-2xl mx-auto my-20 min-[1000px]:p-6">
       <div class="main-carousel" data-flickity='{  "prevNextButtons": false, "pageDots": false, "wrapAround": true }'>
 
             <div class="carousel-cell">
@@ -181,7 +188,7 @@
         </div>
      </section>
     <!-- Our Mega Projects -->
-  <section class="max-w-screen-2xl mx-auto border-4 border-red-600">
+  <section class="max-w-screen-2xl mx-auto mb-16 min-[1000px]:p-6">
     <div class="flex justify-between mb-14 items-center max-[600px]:block">
       <h1 class="text-5xl text-text-head max-[600px]:my-6 text-center">Our mega projects</h1>
       <span class="text-text-blue max-[600px]:flex max-[600px]:justify-end max-[600px]:my-4 text-center">Explore more mega projects</span>
@@ -208,10 +215,10 @@
   </section>
     <section></section>
     <!-- In this Section -->
-    <section class="bg-bg-dark ">
-      <div class="max-w-screen-2xl mx-auto">
-        <h2 class="text-text-head text-4xl mb-36">In this section</h2>
-        <div class="cards flex flex-wrap gap-3 justify-center items-center">
+    <section class="bg-bg-dark">
+      <div class="max-w-screen-2xl mx-auto min-[1000px]:p-6">
+        <h2 class="text-text-head text-4xl mb-36 pt-20">In this section</h2>
+        <div class="cards flex flex-wrap gap-3 justify-start items-center pb-36">
           <div class="w-[450px]">
             <img
               src="./images/asset 6.webp"
@@ -314,7 +321,7 @@
 
 <!-- Sustainability -->
     
-<section class="cursor-pointer">
+<section class="cursor-pointer   ">
     <div style="background-image: url(./images/asset\ 12.webp);" class="h-56 bg-cover bg-center flex flex-col items-center justify-center text-white">
         <p class="text-5xl mb-6 ">Sustainability</p>
         <div>
