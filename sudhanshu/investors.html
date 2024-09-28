@@ -95,26 +95,26 @@
 
         <section class="body-font bg-slate-200 flex">
             <div class="container mx-auto px-1 py-24 mt-10 mb-10 border-r-8 w-[25%] rounded-[1.125rem] bg-blue-800">
-                <div class="px-4">
+                <div class="px-4 -mb-28">
                     <h1 class="text-xl font-normal mb-[5px] text-white -mt-20">Today’s share details</h1>
-                    <span class="text-base text-white">September 26, 2024 03:20 PM (GMT+3)</span>
+                    <span class="text-base text-white">September 26, 2024<br/> 03:20 PM (GMT+3)</span>
                     <hr class="border-blue-400"/>
-                    <h1 class="text-4xl font-light text-white">SAR 27.60</h1>
+                    <h1 class="text-6xl font-light text-white mt-2">SAR 27.60</h1>
                     <span class="text-blue-500">SAR 27.600</span>
-                    <hr class="border-blue-400"/>
-                    <p>Stock</p>
+                    <hr class="border-blue-400 mt-2"/>
+                    <canvas id="barChart"></canvas>                    
                     <hr class="border-blue-400 mb-3"/>
-                    <p class="text-white flex ml-36">Financial Key <img src="./images/forwardarrowc.svg" alt="arrow" class="h-12 w-12 ml-3 -mt-2.5"></p>
+                    <p class="text-white flex ml-36">Key Financials <img src="./images/forwardarrowc.svg" alt="arrow" class="h-12 w-12 ml-3 -mt-2.5"></p>
                 </div>
             </div>  
             <div class="container mx-auto px-1 py-24 mt-10 mb-10 border-r-8 w-[25%] rounded-[1.125rem] bg-blue-400">
                 <div class="px-4">
-                    <h1 class="text-xl font-normal mb-[5px] text-white -mt-20">Share price trend (3 months)</h1>
+                    <h1 class="text-xl font-normal mb-[5px] text-white -mt-20">Share price trend<br/> (3 months)</h1>
                     <span class="text-base text-white">June 27 - September 26</span>
-                    <hr class="border-slate-300"/>
-                    Stock
+                    <hr class="border-slate-300 mt-4"/>
+                    <canvas id="lineChart" class="h-20" ></canvas>
                     <hr class="border-slate-300 mb-3"/>
-                    <p class="text-white flex ml-36">Financial Key <img src="./images/forwardarrowc.svg" alt="arrow" class="h-12 w-12 ml-3 -mt-2.5"></p>
+                    <p class="text-white flex ml-36 -mb-10">Financial Key <img src="./images/forwardarrowc.svg" alt="arrow" class="h-12 w-12 ml-3 -mt-2.5"></p>
                 </div>
             </div>  
             <div class="container mx-auto px-1 py-24 mt-10 mb-10 border-r-8 w-[25%] rounded-[1.125rem] bg-white">
@@ -591,5 +591,51 @@ See all investor news<img src="./images/forwardarrowbc.svg" alt="arrow" class="w
                     <img src="./images/Logo.png" alt="arrow" class="h-5 w-15 ml-[70rem] -mt-12 "/>
                 </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>  
+const ctxBar = document.getElementById('barChart').getContext('2d');  
+const barChart = new Chart(ctxBar, {  
+    type: 'bar',  
+    data: {  
+          labels: ['10:00', '', '', '','','','', '', '12:00','','','', '', '','','','14:00','', '', '','',],  
+        datasets: [{  
+            label: 'Stock Price',  
+            data: [30,20,25,10,15,22,18,10,50,100,40,15,13,17,24,20,60,22,18,17,20],  
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',  
+            borderColor: 'rgba(75, 192, 192, 1)',  
+            borderWidth: 1,
+            borderRadius:5  
+        }]  
+    },  
+    options: {  
+        scales: {  
+            y: {  
+                beginAtZero: true  
+            }  
+        }  
+    }  
+});  
+
+const ctxLine = document.getElementById('lineChart').getContext('2d');  
+const lineChart = new Chart(ctxLine, {  
+    type: 'line',  
+    data: {  
+        labels: ['','July','','','','','','', 'August','','','','','','', 'September','','','','','','',],  
+        datasets: [{  
+            label: 'Stock Price',  
+            data: [15, 25, 17, 28, 26,28,25,28,10,5,10,28,25,23,10,25,21,23,17,14,10,20],  //15
+            fill: false,  
+            borderColor: '#1120f2',  
+        }]  
+    },  
+    options: {  
+        scales: {  
+            y: {  
+                beginAtZero: true  
+            }  
+        }  
+    }  
+});  
+</script>
 </body>
 </html>
